@@ -7,9 +7,6 @@ The input string will only consist of lower case letters and/or spaces.
 
 */
 
-
-
-
 // Method 01:
 
 #include <stddef.h>
