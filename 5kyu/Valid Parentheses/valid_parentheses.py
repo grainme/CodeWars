@@ -1,12 +1,18 @@
-# Using Stack Data structure
-
-
 def valid_parentheses(string):
+    """
+    It checks if the parentheses are balanced.
+    
+    :param string: a string of parentheses
+    """
+    # Creating an empty list.
     stack = []
     for character in string:
+        # It checks if the character is "(".
         if character == "(":
             stack.append(character)
         elif character == ")":
-            if len(stack) == 0 or stack.pop() != "(":
+            # It checks if the stack is empty or the last element of the stack is not "(".
+            if not stack or stack.pop() != "(":
                 return False
-    return len(stack) == 0
+    # It checks if the stack is empty. 
+    return len(stack) == 0 
