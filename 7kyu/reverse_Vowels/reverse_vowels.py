@@ -11,3 +11,5 @@ for i in range(len(s)):
     else:
         d+=s[i]
 print(d)
+
+# input : hola --> output : halo
